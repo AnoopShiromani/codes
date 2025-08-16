@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 5;
+    int result;
+
+    // Demonstrating postfix increment
+    printf("Initial value of a: %d\n", a);
+    result = a++;
+    printf("After postfix increment (a++):\n");
+    printf("Result: %d, Updated a: %d\n\n", result, a);
+
+    // Resetting a to 5
+    a = 5;
+
+    // Demonstrating prefix increment
+    printf("Initial value of a: %d\n", a);
+    result = ++a;
+    printf("After prefix increment (++a):\n");
+    printf("Result: %d, Updated a: %d\n\n", result, a);
+
+    // Demonstrating postfix decrement
+    printf("Initial value of b: %d\n", b);
+    result = b--;
+    printf("After postfix decrement (b--):\n");
+    printf("Result: %d, Updated b: %d\n\n", result, b);
+
+    // Resetting b to 5
+    b = 5;
+
+    // Demonstrating prefix decrement
+    printf("Initial value of b: %d\n", b);
+    result = --b;
+    printf("After prefix decrement (--b):\n");
+    printf("Result: %d, Updated b: %d\n", result, b);
+
+    return 0;
+}
+
+Output:
+Initial value of a: 5
+After postfix increment (a++):
+Result: 5, Updated a: 6
+
+Initial value of a: 5
+After prefix increment (++a):
+Result: 6, Updated a: 6
+
+Initial value of b: 5
+After postfix decrement (b--):
+Result: 5, Updated b: 4
+
+Initial value of b: 5
+After prefix decrement (--b):
+Result: 4, Updated b: 4
